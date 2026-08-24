@@ -579,7 +579,7 @@ respond_to_read:
   type: boolean
   default: true
 send_on_init:
-  description: Send the initial expose value to the KNX bus when the expose is initialized. If disabled, the initial value is only stored locally and can still be used for read responses and periodic sending. Subsequent value changes are sent normally.
+  description: Send the first valid value learned by the expose to the KNX bus. If disabled, the first valid value is initialized locally without sending a telegram and remains available for read responses and periodic sending. Subsequent value changes are sent normally.
   required: false
   type: boolean
   default: false  
